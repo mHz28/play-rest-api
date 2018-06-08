@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "a7886da4-bd7f-4db7-88af-51972f1ecdc7",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url}}/api/jsonBlob",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "451b8a9d-e417-425f-8d69-e78d75191551",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code:Code is 201 created\"]=responseCode.code ===201",
+							"var blogLink = postman.getResponseHeader(\"location\");",
+							"postman.setEnvironmentVariable(\"blogLink\",blogLink);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"My first blog post :)\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/jsonBlob",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"jsonBlob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{blogLink}}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fccd9ae9-7289-4c81-88ef-578cfcc3602b",
+						"type": "text/javascript",
+						"exec": [
+							"\t",
+							"tests [\"Has correct updated text\"] = ",
+							"  responseBody.has(\"My first blog post :)\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"content\": \"My first blog post, updated :)\"\r\n}"
+				},
+				"url": {
+					"raw": "{{blogLink}}",
+					"host": [
+						"{{blogLink}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{blogLink}}PUT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "62039113-1496-460b-bc1d-1455700ac7ed",
+						"type": "text/javascript",
+						"exec": [
+							"\t",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"content\": \"My first blog post, updated :)\"\r\n}"
+				},
+				"url": {
+					"raw": "{{blogLink}}",
+					"host": [
+						"{{blogLink}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{blogLink}}DELETE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9f4ba2bb-12d3-4f37-81d2-ff916b81e09b",
+						"type": "text/javascript",
+						"exec": [
+							"\t",
+							"tests [\"Status code is 200\"] = responseCode.code ===200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"content\": \"My first blog post, updated :)\"\r\n}"
+				},
+				"url": {
+					"raw": "{{blogLink}}",
+					"host": [
+						"{{blogLink}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{blogLink}}PostDelete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7de7468f-27e9-4e28-8d05-a9b42425205e",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"tests[\"Status code is 404\"] = ",
+							"    responseCode.code === 404;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"content\": \"My first blog post, updated :)\"\r\n}"
+				},
+				"url": {
+					"raw": "{{blogLink}}",
+					"host": [
+						"{{blogLink}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

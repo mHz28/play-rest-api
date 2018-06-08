@@ -1,0 +1,17 @@
+products:
+   test/controllers/HomeControllerSpec.scala -> build/playBinary/testClasses/HomeControllerSpec.class
+binary dependencies:
+   test/controllers/HomeControllerSpec.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.12/2.5.11/88c0033b7d29f4700a928bc221b1124e8e22b5e2/akka-actor_2.12-2.5.11.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-stream_2.12/2.5.11/bab410f1b108df32159554d57a228d8a0d076a52/akka-stream_2.12-2.5.11.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/com.typesafe.play/filters-helpers_2.12/2.6.15/db544ca6ffa0072f80545e5b38ede65a6f903bf5/filters-helpers_2.12-2.6.15.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-test_2.12/2.6.15/cbbfd04937684e129000db8228cf2f15aff7c604/play-test_2.12-2.6.15.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play_2.12/2.6.15/3fc11b4717ea27af44c106ffb158906eab5da998/play_2.12-2.6.15.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.4/7663f74ef944453c86cc7e6597ed33e9281f6412/scala-library-2.12.4.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.12/3.0.4/e75f0f9c77aa391e01797cfc42fb82fd7c7d59a5/scalactic_2.12-3.0.4.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.12/3.0.4/87d68f3d06dbf698fd0084c0a8b8996864d15465/scalatest_2.12-3.0.4.jar
+   test/controllers/HomeControllerSpec.scala -> /Users/Home/.gradle/caches/modules-2/files-2.1/org.scalatestplus.play/scalatestplus-play_2.12/3.1.2/28ea67aa75ae5b904791a2c307c4bb5816e7844a/scalatestplus-play_2.12-3.1.2.jar
+source dependencies:
+external dependencies:
+class names:
+   test/controllers/HomeControllerSpec.scala -> HomeControllerSpec

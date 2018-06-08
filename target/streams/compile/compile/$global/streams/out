@@ -1,0 +1,7 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ekwong\Downloads\tmp\play-rest-api\conf\routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ekwong\Downloads\tmp\play-rest-api\conf\routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ekwong\Downloads\tmp\play-rest-api\conf\routes: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\ekwong\Downloads\tmp\play-rest-api\app\views\index.scala.html:1:1: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m@()[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
